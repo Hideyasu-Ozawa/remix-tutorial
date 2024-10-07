@@ -95,6 +95,7 @@ export async function deleteContact(id: string) {
   fakeContacts.destroy(id);
 }
 
+// biome-ignore lint/complexity/noForEach: <explanation>
 [
   {
     avatar:
