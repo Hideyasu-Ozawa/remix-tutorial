@@ -1,55 +1,68 @@
-title: "[ADR] "
-labels: ["ADR"]
+title: "[ADR_000] <タイトル>"
+labels: ["ADR", "Proposed"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        This is text that will show up in the template!
-  - type: textarea
-    id: improvements
-    attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
-      value: |
-        1.
-        2.
-        3.
-        ...
-      render: bash
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
-    attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
-    validations:
-      required: true
   - type: dropdown
-    id: download
+    id: status
     attributes:
-      label: Which area of this project could be most improved?
+      label: ステータス
       options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
+        - Draft
+        - Proposed
+        - Accepted
+        - Rejected
+        - Deprecated
+        - Superseded
+      default: Proposed
+    description: "ADRのステータスを選択します(下書きの場合はDraftを選択)"
     validations:
       required: true
-  - type: checkboxes
+
+  - type: textarea
+    id: context
     attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
+      label: コンテキスト
+      description: "決定をした状況を書きます（利用中の技術との兼合いや組織や体制、ビジネス面の時間的な制約）"
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision
     attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+      label: 決定
+      description: "決定とその根拠と、他の採用を見送った候補とその課題を書きます"
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: influence
+    attributes:
+      label: 影響
+      description: "決定による影響を書きます"
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: compliance
+    attributes:
+      label: コンプライアンス
+      description: "決定による影響を書きます"
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: 参考情報
+      description: "参考情報のリンクを張ります"
+      value: ""
+
+  - type: textarea
+    id: remarks
+    attributes:
+      label: 備考
+      description: "その他補足があれば書きます"
+      value: ""
