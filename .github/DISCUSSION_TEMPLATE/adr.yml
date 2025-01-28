@@ -7,8 +7,8 @@ body:
       label: ステータス
       description: |
         ADRのステータスを選択します
-          レビュー依頼を出す場合はProposed
-          下書きの場合はDraftを選択
+          - レビュー依頼を出す場合はProposed
+          - 下書きの場合はDraftを選択
       options:
         - Draft
         - Proposed
