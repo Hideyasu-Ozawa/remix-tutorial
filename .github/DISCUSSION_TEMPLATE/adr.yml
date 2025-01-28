@@ -12,8 +12,8 @@ body:
         - Rejected
         - Deprecated
         - Superseded
-      default: 0
-    # description: "ADRのステータスを選択します(下書きの場合はDraftを選択)"
+      default: 1
+    description: ADRのステータスを選択します(下書きの場合はDraftを選択)
     validations:
       required: true
 
