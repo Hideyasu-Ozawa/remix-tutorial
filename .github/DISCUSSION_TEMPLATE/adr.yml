@@ -13,7 +13,7 @@ body:
         - Rejected
         - Deprecated
         - Superseded
-      default: 1
+      default: 2 
     validations:
       required: true
 
