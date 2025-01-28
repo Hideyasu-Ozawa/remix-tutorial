@@ -5,6 +5,7 @@ body:
     id: status
     attributes:
       label: ステータス
+      description: ADRのステータスを選択します(下書きの場合はDraftを選択)
       options:
         - Draft
         - Proposed
@@ -13,7 +14,6 @@ body:
         - Deprecated
         - Superseded
       default: 1
-    description: ADRのステータスを選択します(下書きの場合はDraftを選択)
     validations:
       required: true
 
