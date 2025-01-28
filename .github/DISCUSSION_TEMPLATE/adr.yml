@@ -13,7 +13,7 @@ body:
         - Deprecated
         - Superseded
       default: Proposed
-    description: "ADRのステータスを選択します(下書きの場合はDraftを選択)"
+    # description: "ADRのステータスを選択します(下書きの場合はDraftを選択)"
     validations:
       required: true
 
@@ -22,7 +22,7 @@ body:
     attributes:
       label: コンテキスト
       description: "決定をした状況を書きます（利用中の技術との兼合いや組織や体制、ビジネス面の時間的な制約）"
-      value: ""
+      value: a"
     validations:
       required: true
 
@@ -31,7 +31,7 @@ body:
     attributes:
       label: 決定
       description: "決定とその根拠と、他の採用を見送った候補とその課題を書きます"
-      value: ""
+      value: a"
     validations:
       required: true
 
@@ -40,7 +40,7 @@ body:
     attributes:
       label: 影響
       description: "決定による影響を書きます"
-      value: ""
+      value: "a"
     validations:
       required: true
 
@@ -49,7 +49,7 @@ body:
     attributes:
       label: コンプライアンス
       description: "決定による影響を書きます"
-      value: ""
+      value: a"
     validations:
       required: true
 
@@ -58,11 +58,11 @@ body:
     attributes:
       label: 参考情報
       description: "参考情報のリンクを張ります"
-      value: ""
+      value: a"
 
   - type: textarea
     id: remarks
     attributes:
       label: 備考
       description: "その他補足があれば書きます"
-      value: ""
+      value: a"
