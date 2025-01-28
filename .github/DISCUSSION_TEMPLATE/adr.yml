@@ -22,7 +22,7 @@ body:
     attributes:
       label: コンテキスト
       description: "決定をした状況を書きます（利用中の技術との兼合いや組織や体制、ビジネス面の時間的な制約）"
-      value: "a"
+      value: 
     validations:
       required: true
 
